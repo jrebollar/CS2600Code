@@ -22,6 +22,9 @@ void play (void) {
     srand((unsigned) time(&t));
 
     answer = (rand() % max);
+    if (answer == 0){
+        answer = answer + (rand() % (max - 1));
+    }
 
     printf("Enter a number between 1 - %d: ", max);
     scanf("%ld", &num);

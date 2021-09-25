@@ -37,9 +37,9 @@ void main(void)
 
     // Logic
     // Calculate tax_amount
-    tax_amount = meal_cost * (0.1 * tax_rate);
+    tax_amount = meal_cost * (0.01 * tax_rate);
     // Calculate tip_amount
-    tip_amount = meal_cost * (0.1 * tip_rate);
+    tip_amount = meal_cost * (0.01 * tip_rate);
     // Calculate total_amount
     total_amount = meal_cost + tip_amount + tax_amount;
     
